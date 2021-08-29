@@ -1,0 +1,30 @@
+@media (max-width: 1250px) {
+    .TodoContainer,
+    .header,
+    .bottomSection,
+    .todos {
+        width: 60%;
+    }
+}
+
+@media (max-width: 800px) {
+    .TodoContainer,
+    .header,
+    .bottomSection,
+    .bottomSection__add,
+    .todos {
+        width: 90%;
+    }
+    .bottomSection .filterButtons {
+        display: none;
+    }
+    .bottomSection__add {
+        align-items: center;
+        display: flex;
+    }
+    .bottomSection__add .filterButtons {
+        margin-left: 20px;
+        width: 90%;
+        align-items: center;
+    }
+}

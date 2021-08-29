@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <title>Todo app</title>
+    <link rel="stylesheet" href="./style/base.css">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./font/fontawesome-free-5.15.3-web/css/all.min.css">
+    <link rel="stylesheet" href="./style/responsive.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.14.0/Sortable.min.js"></script>
+</head>
+
+<body>
+    <main class="topSection">
+        <div class="header">
+            <h1>Todo</h1>
+            <h4>
+                <span id="clock"></span>
+            </h4>
+        </div>
+
+        <div class="TodoContainer">
+            <div class="inputContainer">
+                <input type="text" style="height: 35px;" placeholder="Enter Task" class="todoInput">
+                <div class="btn">
+                    <button class="addButton" type="button">
+                        <i class="fas fa-plus-circle fa-lg addIcon"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="todoList" id="todoList"></div>
+
+        <div class="bottomSection__add">
+            <ul class="filterButtons">
+                <li class="allItems">All</li>
+                <li class="activeItems">Unfinished</li>
+                <li class="completedItems">Completed</li>
+            </ul>
+        </div>
+        <div class="bottomSection">
+            <div class="itemsLeft">0 item left</div>
+
+            <ul class="filterButtons">
+                <li class="allItems">All</li>
+                <li class="activeItems">Active</li>
+                <li class="completedItems">Completed</li>
+            </ul>
+
+            <div class="clearCompleted">Clear completed</div>
+        </div>
+
+        <h2 class="dragAndDropHeader">Drag and drop to reorder list</h2>
+
+        <footer class="footer">
+            Coded by <a href="http://www.instagram.com/vanduyms">Văn Duy</a>
+        </footer>
+    </main>
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
